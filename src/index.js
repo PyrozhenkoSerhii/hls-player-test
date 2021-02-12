@@ -4,7 +4,7 @@ import { HLSPlayerComponent } from './HLSPlayer';
 
 const App = () => (
   <div>
-    <HLSPlayerComponent url="https://rpc.codeda.com/hls/4d00fb26-866a-4e50-ac5a-07f76a27abe3/master.m3u8" />
+    <HLSPlayerComponent url="https://cdn.codeda.com/hls/552b0f62-c7c6-4e16-868a-f2f7a4048b32/master.m3u8" />
   </div>
 )
 
