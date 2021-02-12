@@ -13,7 +13,13 @@ type TProps = {
 export const HLSPlayerComponent = ({ url }: TProps): JSX.Element => {
   const videoRef = useRef(null);
 
-  const hls = useMemo(() => new Hls({ capLevelToPlayerSize: true }), []);
+  const hls = useMemo(() => new Hls({ 
+    capLevelToPlayerSize: true,
+    debug: true,
+    enableWorker: true,
+    liveBackBufferLength: 10,
+    lowLatencyMode: false,
+  }), []);
 
   useEffect(() => {
     if (hls && url && videoRef.current) {
